@@ -1,0 +1,25 @@
+{
+  "name": "mim",
+  "main": "mim.js",
+  "version": "0.0.0",
+  "authors": [
+    "David Horsak <david.horsak@about.me>"
+  ],
+  "keywords": [
+    "internet",
+    "media",
+    "type",
+    "mime",
+    "content",
+    "file",
+    "format"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
