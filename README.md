@@ -59,7 +59,7 @@ console.log(mimeType); // displays 'chemical/x-xyz'
 mimeType = MIM.getMIMEType('https://mediapeers.com/products/12.json');
 console.log(mimeType); // displays 'application/json'
 
-mimeType = MIM.getMIMEType('https://s3.amazonaws.com/mpx-ah-ftp/archive_2.zip?token=hello-world);
+mimeType = MIM.getMIMEType('https://s3.amazonaws.com/mpx-ah-ftp/archive_2.zip?token=hello-world');
 console.log(mimeType); // displays 'application/zip'
 ```
 
