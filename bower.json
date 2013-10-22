@@ -1,10 +1,11 @@
 {
   "name": "mim",
   "main": "mim.js",
-  "version": "0.0.0",
+  "version": "0.1",
   "authors": [
-    "David Horsak <david.horsak@about.me>"
+    "David Horsak <horsak@mediapeers.com>"
   ],
+  "description": "A simple MIME type recognition library that works in both browser and Node.JS apps",
   "keywords": [
     "internet",
     "media",
