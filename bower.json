@@ -1,7 +1,7 @@
 {
   "name": "mim",
   "main": "mim.js",
-  "version": "0.1",
+  "version": "0.1.0",
   "authors": [
     "David Horsak <horsak@mediapeers.com>"
   ],

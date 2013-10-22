@@ -8,6 +8,12 @@ describe('MIM', function() {
       MIM.getMIMEType('video.avi').should.eq('video/x-msvideo');
     });
     
+    context('when MIME type is not found', function() {
+      it('returns null', function() {
+        expect(MIM.getMIMEType('nonexistent')).to.eq(null);
+      });
+    });
+    
     context('accepts', function() {
       it('extension', function() {
         MIM.getMIMEType('mkv').should.eq('video/x-matroska');
