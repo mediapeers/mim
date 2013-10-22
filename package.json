@@ -4,7 +4,9 @@
   "description": "A simple MIME type recognition library that works in both browser and Node.JS apps",
   "main": "mim.js",
   "scripts": {
-    "test": "npm test"
+    "prepublish": "./node_modules/uglify-js/bin/uglifyjs mim.js --output mim.min.js",
+    "test": "mocha --recursive",
+    "lint": "jshint mim.js test"
   },
   "keywords": [
     "internet",
@@ -20,14 +22,11 @@
   "devDependencies": {
     "chai": "~1.8.1",
     "mocha": "~1.13.0",
-    "jshint": "~2.3.0"
+    "jshint": "~2.3.0",
+    "uglify-js": "~2.4.0"
   },
   "repository": {
-      "type": "git",
-      "url": "https://github.com/mediapeers/mim"
-    },
-  "scripts": {
-    "test": "mocha --recursive",
-    "lint": "jshint mim.js test"
+    "type": "git",
+    "url": "https://github.com/mediapeers/mim"
   }
 }
