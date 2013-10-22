@@ -14,6 +14,10 @@ describe('MIM', function() {
       });
     });
     
+    it('works with cyrillic in filename', function() {
+      MIM.getMIMEType('фильм.avi').should.eq('video/x-msvideo');
+    });
+    
     context('accepts', function() {
       it('extension', function() {
         MIM.getMIMEType('mkv').should.eq('video/x-matroska');
