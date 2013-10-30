@@ -1,4 +1,4 @@
-# MIM [![NPM version](https://badge.fury.io/js/mim.png)](http://badge.fury.io/js/mim)
+# MIM [![Build Status](https://travis-ci.org/mediapeers/mim.png?branch=master)](https://travis-ci.org/mediapeers/mim) [![NPM version](https://badge.fury.io/js/mim.png)](http://badge.fury.io/js/mim)
 
 A simple MIME type recognition library that works in both browser and Node.JS apps
 
