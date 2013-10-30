@@ -1,10 +1,10 @@
-# MIM
+# MIM [![NPM version](https://badge.fury.io/js/mim.png)](http://badge.fury.io/js/mim)
 
 A simple MIME type recognition library that works in both browser and Node.JS apps
 
-# Installation
+## Installation
 
-## Node.JS
+### Node.JS
 
 
 Install MIM with npm:
@@ -19,7 +19,7 @@ And then require it in your node app:
 var MIM = require('mim');
 ```
 
-## Browser
+### Browser
 
 Use e.g. install the HTML script tag to include MIM in your global Javascript namespace:
 
@@ -27,10 +27,10 @@ Use e.g. install the HTML script tag to include MIM in your global Javascript na
 <script src="wherever/mim.js"></script>
 ```
 
-# Usage
+## Usage
 
 
-## MIME type lookup
+### MIME type lookup
 
 ```javascript
 var mimeType;
@@ -63,7 +63,7 @@ mimeType = MIM.getMIMEType('https://s3.amazonaws.com/mpx-ah-ftp/archive_2.zip?to
 console.log(mimeType); // displays 'application/zip'
 ```
 
-## MIME type lookup with default
+### MIME type lookup with default
 
 ```javascript
 var mimeType;
