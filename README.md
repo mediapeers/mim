@@ -21,7 +21,15 @@ var MIM = require('mim');
 
 ### Browser
 
-Use e.g. install the HTML script tag to include MIM in your global Javascript namespace:
+Install MIM with bower:
+
+```bash
+bower install mim
+```
+
+Or download desired version from on the [Releases](https://github.com/mediapeers/mim/releases) page
+
+Then add the HTML script tag to include MIM in your global Javascript namespace:
 
 ```html
 <script src="wherever/mim.js"></script>
