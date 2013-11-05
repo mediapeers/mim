@@ -25,7 +25,7 @@
 /**
  * The main MIM namespace
  */
-MIM = {};
+var MIM = {};
 
 /**
  * @constat
