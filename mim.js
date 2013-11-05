@@ -820,10 +820,10 @@ MIM.MIME_TYPES = {
  * @return [Null] if no MIME type was found
  * @return [String] MIME type
  */
-MIM.getMIMEType = function(path, def) {
-  if(typeof def === 'undefined') def = null;
+MIM.getMIMEType = function(path, defaultType) {
+  if(typeof defaultType === 'undefined') defaultType = null;
   
-  var result = def;
+  var result = defaultType;
   var extensions = String(path).toLowerCase().replace(/\?.+/, '').match(/(?!\.)[a-z0-9]+$/);
   
   if(extensions !== null) {
