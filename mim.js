@@ -830,11 +830,13 @@ MIM.getMIMEType = function(path, def) {
     var extension = extensions.pop();
     
     for(var MIMEType in this.MIME_TYPES) {
-      var index = this.MIME_TYPES[MIMEType].indexOf(extension);
+      if(this.MIME_TYPES.hasOwnProperty(MIMEType)) {
+        var index = this.MIME_TYPES[MIMEType].indexOf(extension);
       
-      if(index > -1) {
-        result = MIMEType;
-        break;
+        if(index > -1) {
+          result = MIMEType;
+          break;
+        } 
       }
     }
   }
