@@ -31,7 +31,7 @@ var MIM = {};
  * @constat
  */
 
-MIM.VERSION = '0.3.0';
+MIM.VERSION = '0.3.1';
 
 /**
  * Object containig MIME types with their extensions
