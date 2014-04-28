@@ -808,6 +808,16 @@ MIM.MIME_TYPES = {
 };
 
 /**
+ * transforms the above list as {'ice' : 'x-conference/x-cooltalk'}
+ */
+MIM.TYPE_MIME = MIM.TYPE_MIME || {};
+Object.keys(MIM.MIME_TYPES).forEach (function(type) {
+    MIM.MIME_TYPES[type].forEach (function (mime) { 
+      MIM.TYPE_MIME[mime] = type; 
+    });
+});
+
+/**
  * Searches throw all known MIME types and returns the one that matches given
  * extension.
  *
@@ -830,17 +840,7 @@ MIM.getMIMEType = function(path, defaultType) {
   
   if(extensions !== null) {
     var extension = extensions.pop();
-    
-    for(var MIMEType in this.MIME_TYPES) {
-      if(this.MIME_TYPES.hasOwnProperty(MIMEType)) {
-        var index = this.MIME_TYPES[MIMEType].indexOf(extension);
-      
-        if(index > -1) {
-          result = MIMEType;
-          break;
-        } 
-      }
-    }
+    result = MIM.TYPE_MIME[extension] || defaultType;
   }
   
   return result;
